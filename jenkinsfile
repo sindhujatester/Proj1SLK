@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('First stage') {
+            steps {
+                echo 'Executing First Stage'
+                bat '''cd C:\\Users\\slk\\practice_javascript\\prac_pm
+                rmdir temp1
+                dir
+                '''
+            }
+        }
+    }
+}
